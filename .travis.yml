@@ -1,0 +1,11 @@
+language: python
+python:
+  - "3.14"  # or the Python version you are using
+
+# command to install dependencies
+install:
+  - pip install -r requirements.txt || pip install pytest
+
+# command to run tests
+script:
+  - python -m pytest -v
